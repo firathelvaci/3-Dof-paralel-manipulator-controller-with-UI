@@ -1,0 +1,169 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @TRIS_C
+028-029 start_point
+02A-02D encoder_value
+02E-02F counter
+030     aState
+031     aLastState
+032-035 pwmOut
+036-039 senPosition
+03A-03B set_point
+03C-03F error
+040-043 total_error
+044-047 prev_error
+048-04B buffer
+04C     state
+04D-04E x_1
+04F-050 x_2
+051-054 deneme
+055-056 sayi_1
+057-058 sayi_2
+059     @I2C_STATE
+05A-05D @FLT.P1
+05A-05D @SFTOI.P2
+05A-05B @ITOF.P3
+05A     MAIN.@SCRATCH1
+05B     MAIN.@SCRATCH2
+05C     MAIN.@SCRATCH3
+05D     MAIN.@SCRATCH4
+05E-061 @ADDFF.P1
+05E-061 @DIVFF.P2
+05E-061 @FLT.P3
+05E-05F @SITOF.P4
+05E     MAIN.@SCRATCH5
+05F     MAIN.@SCRATCH6
+060     MAIN.@SCRATCH7
+061     MAIN.@SCRATCH8
+062-065 @ADDFF.P1
+062-065 @MULFF.P2
+062-065 @DIVFF.P3
+062     @FLT.@SCRATCH1
+063     @FLT.@SCRATCH2
+066-069 @MULFF.P1
+066     @DIVFF.@SCRATCH1
+066     @ADDFF.@SCRATCH1
+067     @DIVFF.@SCRATCH2
+067     @ADDFF.@SCRATCH2
+068     @DIVFF.@SCRATCH3
+068     @ADDFF.@SCRATCH3
+069     @DIVFF.@SCRATCH4
+069     @ADDFF.@SCRATCH4
+06A     @DIVFF.@SCRATCH5
+06A     @MULFF.@SCRATCH1
+06A     @ADDFF.@SCRATCH5
+06B     @DIVFF.@SCRATCH6
+06B     @MULFF.@SCRATCH2
+06B     @ADDFF.@SCRATCH6
+06C     @MULFF.@SCRATCH3
+06C     @ADDFF.@SCRATCH7
+06D     @MULFF.@SCRATCH4
+06D     @ADDFF.@SCRATCH8
+06E     @MULFF.@SCRATCH5
+06F     RB_IOC_ISR.@SCRATCH1
+06F     SSP_isr.@SCRATCH1
+070     @I2C_WRITE_1.P1
+070     SSP_isr.@SCRATCH2
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0FF     @INTERRUPT_AREA
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+47F     @INTERRUPT_AREA
+4FF     @INTERRUPT_AREA
+57F     @INTERRUPT_AREA
+5FF     @INTERRUPT_AREA
+67F     @INTERRUPT_AREA
+6FF     @INTERRUPT_AREA
+77F     @INTERRUPT_AREA
+7FF     @INTERRUPT_AREA
+87F     @INTERRUPT_AREA
+8FF     @INTERRUPT_AREA
+97F     @INTERRUPT_AREA
+9FF     @INTERRUPT_AREA
+A7F     @INTERRUPT_AREA
+AFF     @INTERRUPT_AREA
+B7F     @INTERRUPT_AREA
+BFF     @INTERRUPT_AREA
+C7F     @INTERRUPT_AREA
+CFF     @INTERRUPT_AREA
+D7F     @INTERRUPT_AREA
+DFF     @INTERRUPT_AREA
+E7F     @INTERRUPT_AREA
+EFF     @INTERRUPT_AREA
+F7F     @INTERRUPT_AREA
+FFF     @INTERRUPT_AREA
+
+ROM Allocation:
+000038  RB_IOC_ISR
+000059  SSP_isr
+000081  @I2C_WRITE_1
+00009F  @SITOF
+0000C4  @DIVFF
+00018E  @MULFF
+000203  @ADDFF
+000344  @ITOF
+000363  @SFTOI
+000382  @FLT
+0003C1  MAIN
+0003C1  @cinit1
+000405  @cinit2
+
+Project Directory:
+    C:\Users\mp3fr\OneDrive\microcontroller\slave_one_pic\theta_e\
+
+Project Files:
+    main.c                                                  [30-May-19 14:23  CRC=1FCD5D81]
+    main.h                                                  [30-May-19 09:15  CRC=3ED18D90]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h [12-Kas-13 14:35  CRC=81334808]
+
+Source signature=61057B21
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA
