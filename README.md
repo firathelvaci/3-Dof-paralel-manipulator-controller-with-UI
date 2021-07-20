@@ -7,3 +7,6 @@ Thanks to image processing our end effector,which is laser engraving aparatus at
 Our system that controlled by position controllers, can go wanted positon with wanted velocity. Also, we used motor drivers that designed by us.
 
 In the UI part user gives a parametric path function to the UI. And UI calcualtes points in given time period. For example if a circle path given by user, every predeterminated period the UI calculates end effector points and with these points UI calculates motor angles for every each motor and sends to the arduino. The arduino is used beacuse the arduino is used as a bridge between pic microcontrollers and PC. But we are planning to remove the arduino and use a raspberry pi instead. With this communication delay will be reduced and comminaciton can be done more reliably.
+
+For test videos :
+www.youtube.com/user/frathelvaci
